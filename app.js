@@ -1,4 +1,4 @@
-let nombre = "Peter Parker";
+/* let nombre = "Peter Parker";
 console.log(nombre);
 
 nombre = "Ben Parker";
@@ -33,3 +33,32 @@ let symbol2 = Symbol("a");
 console.log(typeof symbol1);
 
 console.log(symbol1 === symbol2);
+ */
+/* var persona = {
+    nombre:"Juana",
+    apellidos:"Cuesta",
+    direccion:{
+        "calle":20,
+        "carrera":50
+    }
+
+}
+
+console.log(persona.direccion)
+console.log(persona.direccion.calle)
+
+
+persona.direccion.zipcode = 1022222
+
+console.log(persona.direccion)
+console.log(persona["direccion"]["calle"]) */
+
+
+prueba();
+function prueba(){
+    var a="abelardo";
+    console.log(b);
+}
+
+
+var b=20;

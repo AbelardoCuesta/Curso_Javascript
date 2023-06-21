@@ -62,3 +62,14 @@ function prueba(){
 
 
 var b=20;
+
+function crearPersona(nombre,apellido){
+    return{
+        nombre:nombre,
+        apellido:apellido
+    }
+
+}
+
+var persona = crearPersona("Maria", "Lozano");
+console.log(persona);

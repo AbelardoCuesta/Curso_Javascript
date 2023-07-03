@@ -138,7 +138,7 @@ function miFUncion(a,b,c){
 miFUncion({direccion:"Bogota", Pais:"Colombia"}, 20,30);
 
  */
-
+/* 
 function sobreCarga(operacion,rig){
     operacion = operacion.tipo || "No hay tuberia";
     rig = rig.nombre || "No hay rig";
@@ -153,4 +153,12 @@ function sobreCarga2(rig){
 
 sobreCarga({tipo:"workover",campo:"quifa"},{nombre:"independence",contrato:2050});
 //sobreCarga();
-sobreCarga2("",{nombre:"independence",contrato:2050});
+sobreCarga2("",{nombre:"independence",contrato:2050}); */
+
+a=20;
+b="20";
+c=true;
+d="true";
+console.log(a==b);
+console.log(a===b);
+console.log(c===1);

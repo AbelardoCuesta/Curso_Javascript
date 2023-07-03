@@ -52,7 +52,7 @@ persona.direccion.zipcode = 1022222
 
 console.log(persona.direccion)
 console.log(persona["direccion"]["calle"]) */
-
+/* 
 
 prueba();
 function prueba(){
@@ -73,3 +73,84 @@ function crearPersona(nombre,apellido){
 
 var persona = crearPersona("Maria", "Lozano");
 console.log(persona);
+ */
+
+
+/* 
+
+
+
+
+(function(){
+    function Jugador(nombre){
+        this.nombre=nombre;
+        this.pv=100;
+        this.sp=100;
+    
+        this.curar=function(jugadorObjetivo){
+            if (this.sp >=40 ){
+                this.sp=this.sp - 40
+            }else{
+                console.log(this.nombre + "no tiene sp")
+            }
+            jugadorObjetivo.pv=jugadorObjetivo.pv + 20;
+    
+        }
+    
+        this.tirarFlecha=function(jugadorObjetivo){
+            if (jugadorObjetivo.pv > 0){
+                jugadorObjetivo.pv=jugadorObjetivo.pv-10
+            }
+            else{console.log(jugadorObjetivo.nombre + "ya está muerto")}
+    
+        }
+    }
+    
+    
+var gandalf = new Jugador("Gandalf");
+var legolas = new Jugador("Legolas");
+console.log(gandalf);
+console.log(legolas);
+gandalf.tirarFlecha(legolas);
+//gandalf.curar(legolas);
+console.log(gandalf);
+console.log(legolas);})
+(); */
+/* 
+
+function tipoSer(serVivo){
+    console.log(serVivo.tipo);
+}
+
+
+animal={
+    tipo:"Hervivoro"
+}
+
+tipoSer(animal) */
+
+/* 
+function miFUncion(a,b,c){
+    console.log(arguments);
+    console.log(a.Pais)
+}
+
+miFUncion({direccion:"Bogota", Pais:"Colombia"}, 20,30);
+
+ */
+
+function sobreCarga(operacion,rig){
+    operacion = operacion.tipo || "No hay tuberia";
+    rig = rig.nombre || "No hay rig";
+    console.log("La operacion es " + operacion + " y el rig es " + rig);
+    console.log(rig.nombre);
+}
+
+function sobreCarga2(rig){
+    sobreCarga("", rig.nombre);
+}
+
+
+sobreCarga({tipo:"workover",campo:"quifa"},{nombre:"independence",contrato:2050});
+//sobreCarga();
+sobreCarga2("",{nombre:"independence",contrato:2050});

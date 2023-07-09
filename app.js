@@ -154,11 +154,49 @@ function sobreCarga2(rig){
 sobreCarga({tipo:"workover",campo:"quifa"},{nombre:"independence",contrato:2050});
 //sobreCarga();
 sobreCarga2("",{nombre:"independence",contrato:2050}); */
-
+/* 
 a=20;
 b="20";
 c=true;
 d="true";
 console.log(a==b);
 console.log(a===b);
-console.log(c===1);
+console.log(c===1); */
+
+
+/* var fecha = new Date();
+console.log(fecha);
+
+Date.prototype.sumar= function(dias){
+    this.setDate(this.getDate() + dias);
+    return this;
+
+
+};
+
+fecha.sumar(6);
+console.log(fecha)
+
+
+var frase = new String ();
+console.log(frase);
+
+String.prototype.frasear = function(contador){
+    return this.length;
+}
+
+frase = "Hola";
+frase.frasear;
+console.log(frase.frasear()); */
+
+var numero= new Number();
+console.log(typeof(numero));
+console.log(numero);
+
+
+Number.prototype.numeAleatorio=function(min,max){
+    return Math.floor(Math.random() *100 + (max-min) /min);
+}
+
+
+console.log(numero.numeAleatorio(2,8));
